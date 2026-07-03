@@ -17,4 +17,6 @@ urlpatterns = [
     path('service/', views.service, name = 'service'),
 
     path('starter/', views.starter, name = 'starter'),
+
+    path('show/', views.show, name = 'show')
 ]

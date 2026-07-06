@@ -4,6 +4,7 @@ from django.urls import path
 from Genesisapp import views
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
 
     path('details/', views.details, name = 'home'),
@@ -18,5 +19,10 @@ urlpatterns = [
 
     path('starter/', views.starter, name = 'starter'),
 
-    path('show/', views.show, name = 'show')
+    path('show/', views.show, name = 'show'),
+
+    path('delete/<int:id>', views.delete ),
+
+    path('edit/<int:id>', views.edit )
 ]
+

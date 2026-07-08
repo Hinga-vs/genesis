@@ -23,6 +23,11 @@ urlpatterns = [
 
     path('delete/<int:id>', views.delete ),
 
-    path('edit/<int:id>', views.edit )
+    path('edit/<int:id>', views.edit ),
+
+    #M-Pesa urls
+    path('payment/', views.payment, name='payment'),
+    path('callback/', views.callback, name='callback'),
+   
 ]
 
